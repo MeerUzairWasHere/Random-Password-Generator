@@ -1,94 +1,39 @@
-const characters = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-  "0",
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "~",
-  "`",
-  "!",
-  "@",
-  "#",
-  "$",
-  "%",
-  "^",
-  "&",
-  "*",
-  "(",
-  ")",
-  "_",
-  "-",
-  "+",
-  "=",
-  "{",
-  "[",
-  "}",
-  "]",
-  ",",
-  "|",
-  ":",
-  ";",
-  "<",
-  ">",
-  ".",
-  "?",
-  "/",
-];
+let mainBtn = document.getElementById("main-btn");
+let boxElOne = document.getElementById("box-el-one");
+let boxElTwo = document.getElementById("box-el-two");
 
+let generatePassword = (length = 8) => {
+  let passwordCharacters =
+    "8BD1VAuGQbFfW6gZ9sNL7M0tTIX52Cepwy_4irdPESl.moJxkHnjRUhvcOa3qYKz";
+  let password1 = "";
+
+  for (i = 0; i < length; i++) {
+    let randomNumber = Math.floor(Math.random() * passwordCharacters.length);
+    password1 += passwordCharacters[randomNumber];
+  }
+
+  boxElOne.innerText = password1;
+
+  let password2 = "";
+
+  for (i = 0; i < length; i++) {
+    let randomNumber = Math.floor(Math.random() * passwordCharacters.length);
+    password2 += passwordCharacters[randomNumber];
+  }
+
+  boxElTwo.innerText = password2;
+
+
+};
+
+let copyToClipboard = () => {
+  navigator.clipboard.writeText(boxElOne.innerText)
+  boxElOne.innerText = "Copied!"
+  boxElOne.style.display = "block"
+}
+
+let copyToClipboard2 = () => {
+  navigator.clipboard.writeText(boxElTwo.innerText)
+  boxElTwo.innerText = "Copied!"
+  boxElTwo.style.display = "block"
+}

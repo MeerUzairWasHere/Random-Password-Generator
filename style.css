@@ -1,3 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 body {
-    margin: 0;
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 5%;
+  background: #1f2937;
+}
+#heading {
+  color: #4adf86 !important;
+}
+
+h1 {
+  color: white;
+  margin: 0;
+}
+
+span {
+  color: #4adf86;
+}
+
+.paragraph {
+  color: #d5d4d8;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+button {
+  width: 191px;
+  height: 42px;
+  left: 52px;
+  top: 284px;
+  padding: 10px;
+  background: #10b981;
+  border-radius: 6px;
+  color: #fff;
+  border: none;
+  font-family: "Inter", sans-serif !important ;
+}
+
+button:hover {
+  background-color: #00875a;
+}
+
+.line {
+  width: 446px;
+  height: 0px;
+  margin-top: 30px;
+  border: 1px solid #2f3e53;
+}
+
+.boxes {
+  display: flex;
+  gap: 20px;
+}
+.inner-box {
+  /* Rectangle 95 */
+  margin-top: 30px;
+  width: 211px;
+  height: 39px;
+  left: 52px;
+  top: 396px;
+  background: #273549;
+  border-radius: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 37px;
+
+  /* identical to box height, or 200% */
+  text-justify: center;
+  text-align: center;
+
+  color: #55f991;
+}
+.inner-box:hover{
+  background-color: #10b981;
+  color: white;
 }

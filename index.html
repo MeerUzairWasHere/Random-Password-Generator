@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,27 @@
     <title>Random Password Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="container">
+        <h1 class="heading">Generate a <br>
+            <span>random password</span>
+        </h1>
+
+        <p class="paragraph">Never use insecure password again.</p>
+
+        <button onclick="generatePassword()" id="main-btn">Generate passwords</button>
+
+        <div class="line"></div>
+
+        <div class="boxes">
+            <div onclick="copyToClipboard()" id="box-el-one" class="inner-box"></div>
+            <div onclick="copyToClipboard2()" id="box-el-two" class="inner-box"></div>
+        </div>
+    </div>
+
+
     <script src="script.js"></script>
 </body>
+
 </html>
