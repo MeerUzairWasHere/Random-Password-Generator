@@ -2,7 +2,7 @@ let mainBtn = document.getElementById("main-btn");
 let boxElOne = document.getElementById("box-el-one");
 let boxElTwo = document.getElementById("box-el-two");
 
-let generatePassword = (length = 8) => {
+function generatePassword  (length = 8) {
   let passwordCharacters =
     "8BD1VAuGQbFfW6gZ9sNL7M0tTIX52Cepwy_4irdPESl.moJxkHnjRUhvcOa3qYKz";
   let password1 = "";
