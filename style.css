@@ -46,7 +46,7 @@ button:hover {
 }
 
 .line {
-  width: 446px;
+  width: 365px;
   height: 0px;
   margin-top: 30px;
   border: 1px solid #2f3e53;
@@ -57,7 +57,7 @@ button:hover {
   gap: 20px;
 }
 .inner-box {
-  /* Rectangle 95 */
+
   margin-top: 30px;
   width: 211px;
   height: 39px;
