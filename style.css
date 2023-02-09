@@ -38,6 +38,7 @@ button {
   color: #fff;
   border: none;
   font-family: "Inter", sans-serif !important ;
+  cursor: pointer;
 }
 
 button:hover {
@@ -69,14 +70,16 @@ button:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 37px;
-
-  /* identical to box height, or 200% */
+  cursor: pointer;
+  letter-spacing: 1px;
   text-justify: center;
   text-align: center;
-
+  transition: 0.5s ease-in-out;
   color: #55f991;
+  user-select: none;
 }
-.inner-box:hover{
-  background-color: #10b981;
+.inner-box:hover {
+  background-color: #009b67;
   color: white;
+  font-weight: bold;
 }
